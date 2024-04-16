@@ -3,16 +3,16 @@
     left: 0;
     right: 0;
     top: -100%;
-    min-height: 0;
+    bottom: 100%;
     z-index: 10;
     background-color: rgb(28, 30, 83);
     overflow: auto;
-    transition: top 0.7s, min-height 0.7s;
+    transition: top 0.7s, bottom 0.7s;
 }
 
 .nav_active {
     top: 0;
-    min-height: 300px;
+    bottom: 15%;
 }
 
 .nav__list {

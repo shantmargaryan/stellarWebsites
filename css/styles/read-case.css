@@ -1,0 +1,194 @@
+/* hero css start */
+.hero {
+    padding-top: 6%;
+}
+
+.hero__container {}
+
+.hero__subtitle {
+    margin-bottom: 10px;
+}
+
+.hero__title {
+    max-width: 500px;
+    margin-bottom: 15px;
+}
+
+.hero__text {
+    max-width: 800px;
+    margin-bottom: 50px;
+}
+
+.hero__img-box {
+    padding: 3% 4%;
+    background: linear-gradient(146.94deg, rgb(244, 237, 225) 19.196%, rgb(152, 177, 198) 101.542%);
+    margin-bottom: 50px;
+}
+
+.hero__img {}
+
+.hero__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(40, 41, 56, 0.2);
+}
+
+.hero__item {}
+
+.hero__item-subtitle {
+    display: block;
+    margin-bottom: 5px;
+    opacity: 0.8;
+}
+
+.hero__item-link {
+    color: rgb(40, 41, 56);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* hero css end */
+
+/* about css start */
+.about {}
+
+.about__container {}
+
+.about__title {
+    margin-bottom: 15px;
+}
+
+.about__text {
+    max-width: 800px;
+    margin-bottom: 25px;
+}
+
+.about__list {
+    margin: 0;
+    padding: 0;
+    padding: 0;
+    padding-left: 15px;
+    margin-bottom: 60px;
+}
+
+.about__item {
+    max-width: 800px;
+    color: rgb(40, 41, 56);
+}
+
+.about__item:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.about__item-text {}
+
+.about__img-box {
+    padding: 3% 4%;
+    background: linear-gradient(320deg, rgb(244, 237, 225) 19.157%, rgb(152, 177, 198) 101.569%);
+}
+
+.about__img {}
+
+/* about css end */
+
+/* work css start */
+.work {}
+
+.work__container {}
+
+.work__content {
+    max-width: 800px;
+    margin-bottom: 8%;
+}
+
+.work__title {
+    margin-bottom: 10px;
+}
+
+.work__text {
+    margin-bottom: 25px;
+}
+
+.work__list {
+    margin: 0;
+    padding: 0;
+    padding-left: 15px;
+}
+
+.work__item {
+    color: rgb(40, 41, 56);
+}
+
+.work__item:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.work__item-text {}
+
+.work__artist-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 25px 0;
+    border-top: 1px solid rgba(40, 41, 56, 0.2);
+    border-bottom: 1px solid rgba(40, 41, 56, 0.2);
+}
+
+.work__artist-item {}
+
+.work__artist-link {
+    color: rgb(40, 41, 56);
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.4s;
+}
+
+.work__artist-link:hover {
+    color: rgb(36, 5, 242);
+}
+
+/* work css end */
+
+/* build css start */
+
+.build {}
+
+.build__container {
+    display: flex;
+    justify-content: center;
+}
+
+.build__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+}
+
+.build__title {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.build__text {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+.build__link {
+    display: inline-block;
+    padding: 15px 60px;
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 40px;
+    color: rgb(27, 28, 43);
+    background-color: rgb(252, 217, 128);
+}
+
+/* build css end */
