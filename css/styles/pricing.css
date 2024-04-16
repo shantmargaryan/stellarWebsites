@@ -1,0 +1,281 @@
+/* pricing css start */
+.pricing {
+    padding-top: 7%;
+}
+
+.pricing__container {}
+
+.pricing__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.pricing__title {
+    margin-bottom: 15px;
+}
+
+.pricing__text {
+    max-width: 550px;
+    color: rgb(40, 41, 56);
+    text-align: center;
+}
+
+.pricing__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    height: 100%;
+}
+
+.pricing__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 60px 70px 60px 50px;
+    border-radius: 12px;
+    background-color: rgb(244, 246, 252);
+    transition: background-color 0.4s, transform 0.4s, box-shadow 0.4s;
+}
+
+.pricing__item::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 0;
+    border-radius: 0% 0% 50% 50% / 0% 0% 20% 20%;
+    background-color: rgba(255, 255, 255, 0.06);
+    pointer-events: none;
+    transition: height 0.7s;
+}
+
+.pricing__item:hover::after {
+    height: 80%;
+}
+
+.pricing__item:hover {
+    background-color: rgb(28, 30, 83);
+    transform: scale(1.03);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.pricing__item:hover .pricing__price {
+    color: rgb(255, 255, 255);
+}
+
+.pricing__item:hover .pricing__price-text {
+    color: rgb(252, 217, 128);
+}
+
+.pricing__item:hover .pricing__item-title {
+    color: rgb(255, 255, 255);
+}
+
+.pricing__item:hover .pricing__item-text {
+    color: rgb(255, 255, 255);
+}
+
+.pricing__item:hover .pricing__limited_text {
+    color: rgb(255, 255, 255);
+}
+
+.pricing__item:hover .pricing__icon_important {
+    fill: rgba(255, 255, 255, 0.5);
+}
+
+.pricing__price-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.pricing__price {
+    font-size: 38px;
+    font-weight: 600;
+    color: rgb(40, 41, 56);
+    transition: color 0.4s;
+}
+
+.pricing__price-text {
+    font-weight: 400;
+    color: rgb(36, 5, 242);
+    transition: color 0.4s;
+}
+
+.pricing__item-title {
+    margin-bottom: 10px;
+    font-size: 24px;
+    transition: color 0.4s;
+}
+
+.pricing__item-text {
+    margin-bottom: 50px;
+    transition: color 0.4s;
+}
+
+.pricing__limited-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 80px;
+}
+
+.pricing__limited_item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pricing__icon {
+    width: 25px;
+    height: 20px;
+    fill: rgb(151, 218, 173);
+}
+
+.pricing__icon_important {
+    fill: rgba(40, 41, 56, 0.5);
+    transition: fill 0.4s;
+}
+
+
+.pricing__limited_text {
+    color: rgb(40, 41, 56);
+    font-weight: 400;
+    transition: color 0.4s;
+}
+
+.pricing__limited_text_important {
+    color: rgba(40, 41, 56, 0.5);
+}
+
+.pricing__button-box {
+    display: flex;
+    justify-content: center;
+}
+
+.pricing__button {
+    padding: 15px 50px;
+    background-color: rgb(40, 41, 56);
+    border-radius: 40px;
+    color: rgb(244, 246, 252);
+    transition: background-color 0.4s;
+}
+
+.pricing__button:hover {
+    color: rgb(40, 41, 56);
+    background-color: rgb(252, 217, 128);
+}
+
+/* pricing css end */
+
+/* questions css start */
+
+.questions {}
+
+.questions__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.questions__content {
+    max-width: 400px;
+}
+
+.questions__title {
+    margin-bottom: 15px;
+}
+
+.questions__link {
+    color: rgba(36, 5, 242);
+}
+
+.accordion {
+    counter-reset: number;
+}
+
+.accordion__item {}
+
+.accordion__item:not(:last-child) {
+    margin-bottom: 30px;
+    padding-bottom: 35px;
+    border-bottom: 2px solid rgb(236, 236, 241);
+}
+
+.accordion__button {
+    position: relative;
+    display: flex;
+    align-items: start;
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.accordion__button_active {}
+
+.accordion__button::before {
+    counter-increment: number;
+    content: "0" counter(number);
+    margin-right: 25px;
+    font-size: 24px;
+    font-weight: 600;
+    color: rgb(36, 5, 242);
+}
+
+.accordion__line {
+    position: absolute;
+    right: 0;
+    bottom: 13px;
+    display: inline-block;
+    width: 16px;
+    height: 3px;
+    background-color: rgb(40, 41, 56);
+    transition: transform 0.5s;
+}
+
+.accordion__line_horizontal {
+    transform: rotate(90deg);
+}
+
+.accordion__line_vertical {}
+
+.accordion__button_active .accordion__line_horizontal {
+    transform: rotate(45deg);
+}
+
+.accordion__button_active .accordion__line_vertical {
+    transform: rotate(-45deg);
+}
+
+
+.accordion__collapse {}
+
+.accordion__collapse_open {}
+
+.accordion__body {}
+
+.accordion__body-text {
+    margin-left: 60px;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(40, 41, 56, 0.8);
+}
+
+@media(min-width:992px) {
+    .questions__container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .accordion {
+        width: 50%;
+    }
+}
+
+/* questions css end */

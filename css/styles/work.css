@@ -1,0 +1,170 @@
+/* hero css start */
+
+.hero {}
+
+.hero__bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6%;
+    width: 100%;
+    min-height: 500px;
+    padding: 6% 15px;
+    background-color: rgb(244, 246, 252);
+}
+
+.hero__container {}
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 700px;
+}
+
+.hero__subtitle {
+    margin-bottom: 5px;
+    opacity: 0.8;
+}
+
+.hero__title {
+    margin-bottom: 25px;
+}
+
+.hero__text {
+    margin-bottom: 30px;
+    text-align: center;
+    color: rgba(40, 41, 56, 0.8);
+}
+
+.hero__socials {
+    display: flex;
+    gap: 30px;
+}
+
+.hero__icon {
+    width: 27px;
+    height: 25px;
+    fill: rgb(40, 41, 56);
+}
+
+.hero-tabs-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero__tabs {
+    margin-bottom: 50px;
+}
+
+.hero__tab {
+    cursor: pointer;
+    padding: 10px 20px;
+    display: inline-block;
+    color: rgba(40, 41, 56, 0.7);
+}
+
+.hero__panels {}
+
+.hero__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, auto));
+    gap: 30px;
+}
+
+.hero__item {}
+
+.hero__img {
+    margin-bottom: 20px;
+}
+
+.hero__item-title {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.hero__panel {
+    display: none;
+}
+
+.hero__item-text {
+    margin-bottom: 25px;
+}
+
+.hero__link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+    color: rgb(40, 41, 56);
+}
+
+.hero__link:hover .hero__link-icon {
+    transform: translateX(5px);
+}
+
+.hero__link-icon {
+    transition: transform 0.4s;
+}
+
+.hero__input {
+    display: none;
+}
+
+#one:checked~.hero__panels #one-panel,
+#two:checked~.hero__panels #two-panel,
+#three:checked~.hero__panels #three-panel,
+#four:checked~.hero__panels #four-panel {
+    display: block;
+}
+
+#one:checked~.hero__tabs #one-tab,
+#two:checked~.hero__tabs #two-tab,
+#three:checked~.hero__tabs #three-tab,
+#four:checked~.hero__tabs #four-tab {
+    color: rgb(36, 5, 242);
+    transition: color 0.4s;
+}
+
+/* hero css end */
+
+/* build css start */
+
+.build {}
+
+.build__container {
+    display: flex;
+    justify-content: center;
+}
+
+.build__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+}
+
+.build__title {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.build__text {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+.build__link {
+    display: inline-block;
+    padding: 15px 60px;
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 40px;
+    color: rgb(27, 28, 43);
+    background-color: rgb(252, 217, 128);
+}
+
+/* build css end */

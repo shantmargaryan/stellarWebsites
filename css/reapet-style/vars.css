@@ -1,0 +1,9 @@
+:root {
+    --with-link-color: rgb(187, 187, 203);
+    --black-link-color: rgb(40, 41, 56);
+    --title-color: rgb(40, 41, 56);
+    --text-color: rgba(40, 41, 56, 0.5);
+    --button-backround: rgb(252, 217, 128);
+    --button-color: rgb(27, 28, 43);
+    --subtitle-color: rgb(40, 41, 56);
+}
