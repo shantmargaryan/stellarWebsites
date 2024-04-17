@@ -573,7 +573,7 @@
     align-items: start;
     width: 100%;
     margin-bottom: 15px;
-    font-size: 24px;
+    font-size: calc(19px + (24 - 18) * ((100vw - 320px) / (1600 - 320)));
     font-weight: 600;
 }
 
