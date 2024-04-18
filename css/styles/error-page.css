@@ -1,0 +1,22 @@
+.error {
+    padding-top: 6%;
+}
+
+.error__container {
+    text-align: center;
+}
+
+.error__title {
+    margin-bottom: 25px;
+    font-size: 75px;
+}
+
+.error__text {
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+.error__link {
+    font-size: 18px;
+    color: rgb(40, 41, 56);
+}
