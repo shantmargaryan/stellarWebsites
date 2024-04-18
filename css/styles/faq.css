@@ -1,0 +1,108 @@
+/* questions css start */
+
+.questions {
+    padding-top: 6%;
+}
+
+.questions__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.questions__content {
+    max-width: 400px;
+}
+
+.questions__title {
+    margin-bottom: 15px;
+}
+
+.questions__link {
+    color: rgba(36, 5, 242);
+}
+
+.accordion {
+    counter-reset: number;
+}
+
+.accordion__item {}
+
+.accordion__item:not(:last-child) {
+    margin-bottom: 30px;
+    padding-bottom: 35px;
+    border-bottom: 2px solid rgb(236, 236, 241);
+}
+
+.accordion__button {
+    position: relative;
+    display: flex;
+    align-items: start;
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: calc(19px + (24 - 18) * ((100vw - 320px) / (1600 - 320)));
+    font-weight: 600;
+}
+
+.accordion__button_active {}
+
+.accordion__button::before {
+    counter-increment: number;
+    content: "0" counter(number);
+    margin-right: 25px;
+    font-size: 24px;
+    font-weight: 600;
+    color: rgb(36, 5, 242);
+}
+
+.accordion__line {
+    position: absolute;
+    right: 0;
+    bottom: 13px;
+    display: inline-block;
+    width: 16px;
+    height: 3px;
+    background-color: rgb(40, 41, 56);
+    transition: transform 0.5s;
+}
+
+.accordion__line_horizontal {
+    transform: rotate(90deg);
+}
+
+.accordion__line_vertical {}
+
+.accordion__button_active .accordion__line_horizontal {
+    transform: rotate(45deg);
+}
+
+.accordion__button_active .accordion__line_vertical {
+    transform: rotate(-45deg);
+}
+
+
+.accordion__collapse {}
+
+.accordion__collapse_open {}
+
+.accordion__body {}
+
+.accordion__body-text {
+    margin-left: 60px;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(40, 41, 56, 0.8);
+}
+
+@media(min-width:992px) {
+    .questions__container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .accordion {
+        width: 50%;
+    }
+}
+
+/* questions css end */
