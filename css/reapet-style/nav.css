@@ -75,3 +75,9 @@
         padding: 0;
     }
 }
+
+@media(max-height:576px){
+    .nav_active {
+        bottom: 0;
+    }
+}
