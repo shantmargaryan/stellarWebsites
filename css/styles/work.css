@@ -25,22 +25,66 @@
 .hero__subtitle {
     margin-bottom: 5px;
     opacity: 0.8;
+    transition: opacity 0.8s, transform 0.8s;
 }
+
+/* .hero__subtitle.scroll-anim {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.hero__subtitle.scroll-anim_active {
+    opacity: 1;
+    transform: translateY(0);
+} */
 
 .hero__title {
     margin-bottom: 25px;
+    transition: opacity 1s, transform 1s;
 }
+
+/* .hero__title.scroll-anim {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.hero__title.scroll-anim_active {
+    opacity: 1;
+    transform: translateY(0);
+} */
 
 .hero__text {
     margin-bottom: 30px;
     text-align: center;
     color: rgba(40, 41, 56, 0.8);
+    transition: opacity 1s, transform 1s;
 }
+
+/* .hero__text.scroll-anim {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.hero__text.scroll-anim_active {
+    opacity: 1;
+    transform: translateY(0);
+} */
 
 .hero__socials {
     display: flex;
     gap: 30px;
+    transition: opacity 1s, transform 1s;
 }
+
+/* .hero__socials.scroll-anim {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.hero__socials.scroll-anim_active {
+    opacity: 1;
+    transform: translateY(0);
+} */
 
 .hero__icon {
     width: 27px;
@@ -71,7 +115,19 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, auto));
     gap: 30px;
+    margin-bottom: 80px;
+    transition: opacity 1s, transform 1s;
 }
+
+/* .hero__list.scroll-anim {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.hero__list.scroll-anim_active {
+    opacity: 1;
+    transform: translateY(0);
+} */
 
 .hero__item {}
 
@@ -110,9 +166,7 @@
     font-size: 24px;
 }
 
-.hero__tabs {
-
-}
+.hero__tabs {}
 
 .hero__panel {
     display: none;
@@ -139,6 +193,18 @@
     gap: 10px;
     font-weight: 500;
     color: rgb(40, 41, 56);
+}
+
+.hero__btn-box {
+    display: flex;
+    justify-content: center;
+}
+
+.hero__btn {
+    padding: 15px 30px;
+    border-radius: 40px;
+    background-color: rgb(252, 217, 128);
+    font-size: inherit;
 }
 
 .hero__link:hover .hero__link-icon {

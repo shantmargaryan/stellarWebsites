@@ -36,6 +36,11 @@
                         </a>
                     </li>
                     <li class="nav__item">
+                        <a class="nav__link link with-link" href="work.html">
+                            Potfolio
+                        </a>
+                    </li>
+                    <li class="nav__item">
                         <a class="nav__link link with-link" href="pricing.html">
                             Pricing
                         </a>
@@ -69,46 +74,52 @@
     <main class="main">
         <div class="main__overlay"></div>
         <!-- contact start -->
-        <section class="contact section">
-            <div class="contact__container">
-                <div class="contact__content">
-                    <h1 class="contact__title title">
+        <section class="contacts section">
+            <div class="contacts__container">
+                <div class="contacts__content">
+                    <h1 class="contacts__title title">
                         Contact Us
                     </h1>
-                    <p class="contact__text text">
+                    <p class="contacts__text text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore.
                     </p>
                 </div>
-                <form class="contact__form" action="#" name="form" method="post" enctype="multipart/form-data">
-                    <div class="contact__box">
-                        <label class="contact__label">
-                            Name
-                            <input class="contact__input input" type="text" placeholder="Enter your name" required>
-                        </label>
-                        <label class="contact__label">
-                            Surname
-                            <input class="contact__input input" type="text" placeholder="Enter your Surname" required>
-                        </label>
-                    </div>
-                    <div class="contact__box">
-                        <label class="contact__label">
-                            Number
-                            <input class="contact__input input" type="tel" placeholder="Enter your Number" required>
-                        </label>
-                        <label class="contact__label">
-                            Email
-                            <input class="contact__input input" type="email" placeholder="Enter your Email" required>
-                        </label>
-                    </div>
-                    <label class="contact__label">
-                        Message
-                        <textarea class="contact__textarea" placeholder="Write your  question here"></textarea>
-                    </label>
-                    <button class="contact__btn button-reset" type="submit">
-                        Send Messege
-                    </button>
-                </form>
+                <ul class="contacts__list list-reset">
+                    <li class="contacts__item">
+                        <svg class="contacts__icon">
+                            <use xlink:href="images/svg/sprite.svg#phone" />
+                        </svg>
+                        <span class="contacts__contact-text subtitle">
+                            Call us
+                        </span>
+                        <a class="contacts__link link" href="tel:+61 3 8376 6284">
+                            +61 3 8376 6284
+                        </a>
+                    </li>
+                    <li class="contacts__item">
+                        <svg class="contacts__icon">
+                            <use xlink:href="images/svg/sprite.svg#email" />
+                        </svg>
+                        <span class="contacts__contact-text subtitle">
+                            Email us
+                        </span>
+                        <a class="contacts__link link" href="mailto:contact@website.com">
+                            contact@website.com
+                        </a>
+                    </li>
+                    <li class="contacts__item">
+                        <svg class="contacts__icon">
+                            <use xlink:href="images/svg/sprite.svg#location" />
+                        </svg>
+                        <span class="contacts__contact-text subtitle">
+                            location
+                        </span>
+                        <a class="contacts__link link" href="#">
+                            4578 Marmora Road, Glasgow
+                        </a>
+                    </li>
+                </ul>
             </div>
         </section>
         <!-- contact end -->
@@ -143,6 +154,14 @@
                             <a class="footer__link link" href="tel:+927 6277 28525">
                                 0927 6277 28525
                             </a>
+                        </div>
+                        <div class="footer__phone-box contact">
+                            <span class="footer__phone footer__contact-text">
+                                location
+                            </span>
+                            <span class="footer__location">
+                                4578 Marmora Road, Glasgow
+                            </span>
                         </div>
                     </div>
                 </div>
