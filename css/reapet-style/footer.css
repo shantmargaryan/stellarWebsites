@@ -13,7 +13,7 @@
 }
 
 .footer__content {
-    max-width: 650px;
+    max-width: 750px;
 }
 
 .footer__logo {}
@@ -25,6 +25,7 @@
 }
 
 .footer__text {
+    max-width: 500px;
     margin-bottom: 85px;
     color: rgba(255, 255, 255, 0.5);
 }
@@ -46,7 +47,7 @@
 .footer__email {}
 
 .footer__contact-text {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
     color: rgb(40, 41, 56);
 }
@@ -54,11 +55,13 @@
 .footer__link {
     color: rgba(40, 41, 56, 0.8);
     font-weight: 400;
+    font-size: 18px;
 }
 
 .footer__location {
     color: rgba(40, 41, 56, 0.8);
     font-weight: 400;
+    font-size: 18px;
 }
 
 .footer__phone {}

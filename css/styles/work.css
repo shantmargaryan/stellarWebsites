@@ -28,7 +28,7 @@
     transition: opacity 0.8s, transform 0.8s;
 }
 
-/* .hero__subtitle.scroll-anim {
+.hero__subtitle.scroll-anim {
     opacity: 0;
     transform: translateY(30px);
 }
@@ -36,14 +36,14 @@
 .hero__subtitle.scroll-anim_active {
     opacity: 1;
     transform: translateY(0);
-} */
+}
 
 .hero__title {
     margin-bottom: 25px;
     transition: opacity 1s, transform 1s;
 }
 
-/* .hero__title.scroll-anim {
+.hero__title.scroll-anim {
     opacity: 0;
     transform: translateY(30px);
 }
@@ -51,7 +51,7 @@
 .hero__title.scroll-anim_active {
     opacity: 1;
     transform: translateY(0);
-} */
+}
 
 .hero__text {
     margin-bottom: 30px;
@@ -60,7 +60,7 @@
     transition: opacity 1s, transform 1s;
 }
 
-/* .hero__text.scroll-anim {
+.hero__text.scroll-anim {
     opacity: 0;
     transform: translateY(30px);
 }
@@ -68,7 +68,7 @@
 .hero__text.scroll-anim_active {
     opacity: 1;
     transform: translateY(0);
-} */
+}
 
 .hero__socials {
     display: flex;
@@ -76,7 +76,7 @@
     transition: opacity 1s, transform 1s;
 }
 
-/* .hero__socials.scroll-anim {
+.hero__socials.scroll-anim {
     opacity: 0;
     transform: translateY(30px);
 }
@@ -84,7 +84,7 @@
 .hero__socials.scroll-anim_active {
     opacity: 1;
     transform: translateY(0);
-} */
+}
 
 .hero__icon {
     width: 27px;
@@ -119,7 +119,7 @@
     transition: opacity 1s, transform 1s;
 }
 
-/* .hero__list.scroll-anim {
+.hero__list.scroll-anim {
     opacity: 0;
     transform: translateY(30px);
 }
@@ -127,7 +127,7 @@
 .hero__list.scroll-anim_active {
     opacity: 1;
     transform: translateY(0);
-} */
+}
 
 .hero__item {}
 

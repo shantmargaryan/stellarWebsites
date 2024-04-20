@@ -50,6 +50,10 @@
     font-weight: 500;
 }
 
+.hero__item-text {
+    font-size: 18px;
+}
+
 /* hero css end */
 
 /* about css start */

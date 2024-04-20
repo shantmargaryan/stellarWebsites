@@ -10,7 +10,6 @@ function showMore(showItems, itemVisibleLength, showMore) {
         const itemsArray = Array.from(items);
         const showMoreItems = itemsArray.slice(3, currentItemsLength);
 
-
         showMoreItems.forEach(item => {
             item.style.display = 'none';
         });
