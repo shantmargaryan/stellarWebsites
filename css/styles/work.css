@@ -129,7 +129,9 @@
     transform: translateY(0);
 }
 
-.hero__item {}
+.hero__item {
+    display: none;
+}
 
 .hero__item:nth-child(1) .hero__img-link {
     display: block;

@@ -14,4 +14,4 @@ if (scrollAnim.length > 0) {
     scrollAnim.forEach(animItem => {
         animObserver.observe(animItem)
     });
-}
+};

@@ -8,10 +8,10 @@ function showMore(showItems, itemVisibleLength, showMore) {
     button.addEventListener("click", () => {
         currentItemsLength += showMore;
         const itemsArray = Array.from(items);
-        const showMoreItems = itemsArray.slice(3, currentItemsLength);
+        const showMoreItems = itemsArray.slice(0, currentItemsLength);
 
         showMoreItems.forEach(item => {
-            item.style.display = 'none';
+            item.style.display = 'block';
         });
 
         if (currentItemsLength >= itemsLength) {
@@ -24,4 +24,4 @@ function showMore(showItems, itemVisibleLength, showMore) {
     }
 };
 
-showMore("[data-show-item]", 3, 4);
+showMore("[data-show-item]", 4, 4);
